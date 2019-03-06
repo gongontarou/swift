@@ -18,18 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1V-3h-7kD">
-                                <rect key="frame" x="164" y="190" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="charge"/>
-                                <connections>
-                                    <action selector="submitWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5JJ-rv-pmz"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたが秘めたエネルギー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WT-VR-OzR">
-                                <rect key="frame" x="6" y="64" width="364" height="36"/>
+                                <rect key="frame" x="69" y="64" width="245" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,20 +55,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="体重を入力[kg]" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQg-7L-sAY">
-                                <rect key="frame" x="130" y="169" width="117" height="30"/>
+                                <rect key="frame" x="129" y="138" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="submitWithSender:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1yz-Qx-Vy9"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="input" destination="sQg-7L-sAY" id="7xt-bL-ozg"/>
-                        <outlet property="nuclearPower" destination="eci-bq-alY" id="2M2-mK-WXa"/>
-                        <outlet property="result" destination="En2-2Y-irS" id="wMd-Sj-Kfx"/>
+                        <outlet property="input" destination="sQg-7L-sAY" id="XNj-xs-NWJ"/>
+                        <outlet property="nuclearPower" destination="eci-bq-alY" id="5Et-xo-KRq"/>
+                        <outlet property="result" destination="En2-2Y-irS" id="OE9-Zo-WTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
